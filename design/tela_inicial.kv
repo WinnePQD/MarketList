@@ -1,0 +1,28 @@
+# ==============================================
+# DESIGN: Tela Inicial
+# ==============================================
+
+<TelaInicial>:
+    MDBoxLayout:
+        orientation: "vertical"
+        padding: 40
+        spacing: 30
+        pos_hint: {"center_y": 0.9}
+
+        MDLabel:
+            text: "🛒 Lista de Mercado"
+            font_style: "Display"
+            halign: "center"
+
+        MDLabel:
+            text: "Organize suas compras de forma simples!"
+            font_style: "Body"
+            halign: "center"
+
+        MDButton:
+            style: "elevated"
+            pos_hint: {"center_x": 0.5}
+            on_press: root.ir_para_lista()
+
+            MDButtonText:
+                text: "Ver Lista de Produtos"
